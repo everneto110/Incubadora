@@ -725,6 +725,70 @@ font-family: 'Roboto Slab', serif;
         color:#202020;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+/*TABELA DE PREÇOS*/
+
+/* Create three columns of equal width */
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+/* Style the list */
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Pricing header */
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+/* Pricing header */
+.price .header2 {
+    background-color: #6b4790;
+    color: white;
+    font-size: 25px;
+}
+.price .header3 {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+
+/* List items */
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+
+
+/* Change the width of the three columns to 100% 
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
 
 
 /*----------------CONTACTUS
