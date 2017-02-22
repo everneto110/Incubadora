@@ -3,7 +3,7 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 AUTHOR : EVERALDO NETO; JÂNCY ARAGÃO
 PROJECT : PROJETO INTEGRADOR SITE
-VERSION : 0.3
+VERSION : 0.4
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 -->
 <html>
@@ -20,22 +20,22 @@ VERSION : 0.3
 	<!-- [ PLUGIN STYLESHEET ]
         =========================================================================================================================-->
 	<link rel="shortcut icon" type="image/x-icon" href="images/Logo.ico">
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-        <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
-	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+	
 	<!-- [ Boot STYLESHEET ]
         =========================================================================================================================-->
 	<link rel="stylesheet" type="text/css" href="library/bootstrap/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" type="text/css" href="library/bootstrap/css/bootstrap.css">
         <!-- [ DEFAULT STYLESHEET ] 
         =========================================================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/color/violet.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+	<link rel="stylesheet" type="text/css" href="css/color/orange.css">
         
 </head>
 <body >
+
 <!-- [ LOADERs ]
 ================================================================================================================================-->	
     <div class="preloader">
@@ -61,7 +61,7 @@ VERSION : 0.3
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a href="#home"><img  src="images/logoP.png" alt=""></a>
+            <a href="#home"><img  src="images/Marca.png" alt=""></a>
         </div>
 
         
@@ -86,10 +86,10 @@ VERSION : 0.3
        <div class="overlay">
            <div class="container">
                <div class="row">
-                   <div class="main-heading-content col-md-12 col-sm-12 text-center">
-        <h1 class="main-heading-title">Seja <span class="main-element themecolor" data-elements="Criativo,Grande,HyperThink"></span></h1>
-        <p class="main-heading-text">Fazendo um hyperlink com suas ideias!</p>
-      </div>
+                  <div class="main-heading-content col-md-12 col-sm-12 text-center">
+                    <h1 class="main-heading-title">Seja <span class="main-element themecolor" data-elements="Criativo,Grande,HyperThink"></span></h1>
+                    <p class="main-heading-text">Fazendo um <a href="#one" class="page-scroll"><u class="themecolor">hyperlink</u></a> com suas ideias!</p>
+                  </div>
                </div>
            </div>
        </div>
@@ -102,7 +102,7 @@ VERSION : 0.3
          <div class="row">
              <div class="col-md-12 text-center black">
                  <h3 class="title">SOBRE <span class="themecolor">NÓS</span></h3>
-            <p class="a-slog">A HyperThink nasceu da vontade de um grupo de amigos em fazer com que todos tenham oportunidade crescer no mundo empresarial.</p> 
+            <p class="a-slog">A HyperThink nasceu da vontade de um grupo de amigos em fazer com que todos tenham oportunidade de crescer no mundo empresarial.</p> 
              </div>
          </div>
          <div class="gap">
@@ -112,21 +112,71 @@ VERSION : 0.3
          <div class="row about-box">
           <div class="col-sm-4 text-center">
             <div class="margin-bottom">
-              <i class="fa fa-newspaper-o"></i>
+              <a href="#openModal1"><i class="fa fa-newspaper-o"></i></a>
+              <div id="openModal1" class="modalDialog">
+                <div>
+                  <a href="#close" title="Close" class="close">X</a>
+                  
+                    <ul class="price">
+                      <li class="header">Editoriais Publicados</li>
+                      <li>The New York Times</li>
+                      <li>USA Today</li>
+                      <li>Época NEGÓCIOS</li>
+                      <li>EXAME.com</li>
+                      <li>CNN</li>
+                      
+                    </ul>
+        
+                </div>
+              </div>
               <h4>PUBLICAÇÕES EM GRANDES EDITORIAS</h4>
               <p class="black">Com vários anos de experiência, a HyperThink já possui publicações falando sobre empreendimentos em editoriais espalhados por todo o globo.</p>
             </div> 
           </div> 
           <div class="col-sm-4 about-line text-center">
             <div class="margin-bottom">
-              <i class="fa fa-diamond"></i>
+              <a href="#openModal2"><i class="fa fa-diamond"></i></a>
+
+              <div id="openModal2" class="modalDialog">
+                <div>
+                  <a href="#close" title="Close" class="close">X</a>
+                  
+                    <ul class="price">
+                      <li class="header">Últimos Prêmios</li>
+                      <li>Maior empresa em Consultoria Empresarial na América Latina (Kennedy Research, 2016)</li>
+                      <li>Melhor fornecedor para serviços de Gestão de Negócios (Forrester Research, 2016)</li>
+                      <li>Festival de empreendedorismo (SENAC, 2015)</li>
+                      <li>Lampião Business (Nordeste Empreendedor, 2014)</li>
+                      
+                      
+                    </ul>
+        
+                </div>
+              </div>
+
               <h4>EMPRESAS PREMIADAS</h4>
               <p class="black">Todas as empresas que nasceram dentro da HyperThink possuem prêmios nos mais diversos festivais de negócios e inovações.</p>
             </div>
           </div>
           <div class="col-sm-4 text-center">
             <div class="margin-bottom">
-              <i class="fa fa-area-chart"></i>
+             <a href="#openModal3"> <i class="fa fa-area-chart"></i> </a>
+
+              <div id="openModal3" class="modalDialog">
+                <div>
+                  <a href="#close" title="Close" class="close">X</a>
+                  
+                    <ul class="price">
+                      <li class="header">Promoção de Ideias</li>
+                      <li>Realização de premiações</li>
+                      <li>Descontos nos planos para as melhores ideias</li>
+                      <li>Acompanhamento do desenvolvimento das empresas</li>
+ 
+                    </ul>
+        
+                </div>
+              </div>
+
               <h4>A TERRA DAS GRANDES IDEIAS</h4>
               <p class="black">O segredo para o sucesso de nossas empresas incubadas é o estímulo às grandes ideias e apoio total a elas.</p>
             </div>
@@ -142,7 +192,7 @@ VERSION : 0.3
         <div class="row">
           <div class="col-md-12">
               <h3 class="title">ALGUMAS EMPRESAS <span class="themecolor">INCUBADAS</span></h3>
-            <p class="a-slog">Essas empresas optaram pela escolha mais inteligente e vieram para a HiperThink</p>
+            <p class="a-slog">Essas empresas optaram pela escolha mais inteligente e vieram para a HyperThink</p>
           </div> 
         </div>
           
@@ -150,8 +200,8 @@ VERSION : 0.3
 
         <div class="row">
 
-        <div class="col-xs-1 port-item margin-bottom"></div>
 
+        <div class="col-xs-1 port-item margin-bottom"></div>
           <div class="col-xs-2 port-item margin-bottom">
             <div >
               <a href="https://feedzai.com/"><img src="images/work-1.png" class="img-responsive" alt="workimg"></a>
@@ -159,7 +209,7 @@ VERSION : 0.3
             </div>
             <div class="work-desc">
               <h3><a href="https://feedzai.com/">Feedzai</a></h3>
-              <span>Tecnologia Anti-fraude</span>
+              <span>Tecnologia <br/>Anti-fraude</span>
             </div>
           </div>
 
@@ -229,8 +279,7 @@ VERSION : 0.3
           </div> 
         </div>
           <div class="row text-center">
-            <!-- gambiarra para centralizar -->
-            <div class="col-xs-1"></div><!-- gambiarra para centralizar -->
+            <div class="col-xs-1"></div>
 
           <div class="col-xs-2">
             <img src="images/team-1.jpg" alt="team-member" class="img-responsive">
@@ -241,7 +290,7 @@ VERSION : 0.3
               <li><a href="https://www.facebook.com/jancy.aragao?fref=ts"><i class="fa fa-facebook"></i></a></li>
               <li><a href="https://twitter.com/jancywdson"><i class="fa fa-twitter"></i></a></li>
             </ul>
-          </div> <!-- team-member -->
+          </div>
 
           <div class="col-xs-2">
             <img src="images/team-2.jpg" alt="team-member" class="img-responsive">
@@ -250,9 +299,9 @@ VERSION : 0.3
            <p>Olá, meu nome é Eduarda. Partindo do visual, farei sua empresa muito mais atrativa.</p>
             <ul class="list-inline top20">
               <li><a href="https://www.facebook.com/mariaeduarda.gomes.735944?fref=ts"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>              
+              <li><a href="https://twitter.com/mdudagms"><i class="fa fa-twitter"></i></a></li>              
             </ul>
-          </div> <!-- team-member -->
+          </div>
 
           <div class="col-xs-2">
             <img src="images/team-3.jpg" alt="team-member" class="img-responsive">
@@ -263,7 +312,7 @@ VERSION : 0.3
               <li><a href="https://www.facebook.com/everneto110"><i class="fa fa-facebook"></i></a></li>
               <li><a href="https://twitter.com/everneto110"><i class="fa fa-twitter"></i></a></li>             
             </ul>
-          </div> <!-- team-member -->
+          </div>
 
           <div class="col-xs-2">
             <img src="images/team-4.jpg" alt="team-member" class="img-responsive">
@@ -272,10 +321,9 @@ VERSION : 0.3
              <p>Olá, meu nome é Ohanna. Farei o máximo para impulsionar seus negócios.</p>
             <ul class="list-inline top20">
               <li><a href="https://www.facebook.com/ohannadeziderio?fref=ts"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>             
             </ul>
 
-          </div> <!-- team-member -->
+          </div>
         
         <div class="col-xs-2">
             <img src="images/team-5.jpg" alt="team-member" class="img-responsive">
@@ -284,20 +332,17 @@ VERSION : 0.3
             <p>Olá, meu nome é Paulo. Comigo o alcance da sua empresa irá voar.</p> 
             <ul class="list-inline top20">
               <li><a href="https://www.facebook.com/paulosergio.fps?fref=ts"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              
             </ul>
-          </div> <!-- team-member -->
+          </div>
         
         </div>
-         <!-- end row -->
 
  
           
       </div>
   </section>
 
- <!-- [STATS]
+ <!-- [STATUS]
  ============================================================================================================================-->
  <section class="our-stats" id="five">
  <div class="container">
@@ -358,7 +403,7 @@ VERSION : 0.3
         </div>
  </section>
 
- <!-- [TESTIMONIAL]
+ <!-- [TESTEMUNHAS]
  ============================================================================================================================-->
  <section class="client-testimonial text-center white" id="six">
   
@@ -368,7 +413,7 @@ VERSION : 0.3
                     <h3 class="title">Alguns <span class="themecolor">Depoimentos</span></h3>            
           </div> 
                 
-                    <div class="col-md-8 col-md-offset-2 grey">
+                    <div class="col-md-8 col-md-offset-2">
                         <div id="testimonial" class="owl-carousel owl-theme">
                             <div class="item">
                                 <h5>O que poucos sabem é que todo meu sucesso foi por causa da HyperThink. Quando conheci a incubadora ela me ajudou a juntamente com meu amigo Wozniak a lançar o Apple I.</h5>
@@ -390,7 +435,7 @@ VERSION : 0.3
             </div>
  </section>
 
- <!-- [/SERVICES]
+ <!-- [SERVIÇOS]
  ============================================================================================================================-->
  
  <section class="services white-background black" id="seven">
@@ -435,11 +480,11 @@ VERSION : 0.3
             
           </ul>
         </div>
-
+        <p>*todos os planos estão inclusos monitoramento e segurança.</p>
       </div>  
     </section>
  
- <!-- [CONTACT]
+ <!-- [CONTATO]
  ============================================================================================================================-->
 <section class="sub-form text-center" id="eight">
   <div class="container">
@@ -453,9 +498,9 @@ VERSION : 0.3
         
             <a href="mailto:contato@hyperthink.com"><button type="submit" class="btn btn-custom theme_background_color">E-mail <i class="fa fa-envelope"></i> </button></a>
             
-            <a href="tel:+55084111111111″>+55(0)84 – 11111-1111"><button type="submit" class="btn btn-custom theme_background_color">Whatsapp <i class="fa fa-whatsapp"></i> </button></a>
+            <a href="tel:+55084988534777″>+55(0)84 – 98853-4777"><button type="submit" class="btn btn-custom theme_background_color">Whatsapp <i class="fa fa-whatsapp"></i> </button></a>
 
-            <a href="https://www.facebook.com"><button type="submit" class="btn btn-custom theme_background_color">Facebook <i class="fa fa-facebook"></i> </button></a>
+            <a href="https://www.facebook.com/HyperThink-1776624322664908/"><button type="submit" class="btn btn-custom theme_background_color">Facebook <i class="fa fa-facebook"></i> </button></a>
 
        </div>
 
@@ -481,35 +526,29 @@ VERSION : 0.3
 
 </div>
 
-<!-- [ /WRAPPER ]
+
+<!-- [SCRIPTS]
 =============================================================================================================================-->
 
-	<!-- [ DEFAULT SCRIPT ] -->
-	<script src="library/modernizr.custom.97074.js"></script>
-	<script src="library/jquery-1.11.3.min.js"></script>
-        <script src="library/bootstrap/js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>	
-	<!-- [ PLUGIN SCRIPT ] -->
-        <!--<script src="library/vegas/vegas.min.js"></script>-->
-	<!--<script src="js/plugins.js"></script>-->
-        <!-- [ TYPING SCRIPT ] -->
-
-        <!-- Script responsável pela "escrita" na home do site -->
-         <script src="js/typed.js"></script>
-
-         <!-- [ COUNT SCRIPT ] -->
-         <script src="js/fappear.js"></script>
-       <script src="js/jquery.countTo.js"></script>
-
-	<!-- [ SLIDER SCRIPT ] -->  
-        <script src="js/owl.carousel.js"></script>
-        <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-        <script type="text/javascript" src="js/SmoothScroll.js"></script>
-        
-        <!-- [ COMMON SCRIPT ] -->
-	<script src="js/common.js"></script>
+    <!-- [ DEFAULT SCRIPT ] -->
+    	<script src="library/modernizr.custom.97074.js"></script>
+          <!-- "Detecta" como sua página web carrega, então você pode usar os resultados para adaptar a experiência ao usuário. -->
+    	<script src="library/jquery-1.11.3.min.js"></script>
+          <!-- É uma biblioteca JavaScript rápida com uma API fácil de usar que funciona em uma infinidade de navegadores. -->
+      <script src="library/bootstrap/js/bootstrap.js"></script>
+          <!-- Componentes do Bootstrap com mais de uma dúzia de plugins jQuery personalizados. -->
+      <script src="js/typed.js"></script>
+          <!-- Responsável pela "escrita" na home do site -->
+    <!-- [ COUNT SCRIPT ] -->
+      <script src="js/fappear.js"></script>
+          <!-- Biblioteca -->
+      <script src="js/jquery.countTo.js"></script>
+          <!-- Plugin jQuery simples para contagem de tempo para cima e para baixo -->
+    <!-- [ SLIDER SCRIPT ] -->  
+      <script src="js/owl.carousel.js"></script> 
+          <!-- Poderoso e Customizável jQuery Carrossel Slider --> 
+    <!-- [ COMMON SCRIPT ] -->
+      <script src="js/common.js"></script>
   
 </body>
-
-
 </html>
